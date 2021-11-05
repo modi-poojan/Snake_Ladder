@@ -9,6 +9,9 @@ public class Snake {
 		System.out.println("Lets start the game");
 		
 		System.out.println("The current position of player is "+ player_position);
+		
+		double dice = Math.floor((Math.random()*10)%6+1); 
+		System.out.println("The dice number is "+dice);
 
 	}
 
