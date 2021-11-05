@@ -9,7 +9,8 @@ public class Snake {
 		System.out.println("Lets start the game");
 		
 		System.out.println("The current position of player is "+ player_position);
-		
+	
+		while(player_position <100) {
 		int dice = (int)Math.floor((Math.random()*10)%6+1); 
 		System.out.println("The dice number is "+dice);
 		
@@ -29,10 +30,16 @@ public class Snake {
 		case 2:
 			System.out.println("Snake!Go backsteps, shown on dice");
 			player_position = player_position - dice;
+			if(player_position < 0) {
+				player_position = 0;
+			}
 			break;
 		}
 		
 		System.out.println("The current position of player is "+ player_position);
+		}
 	}
+		
+		
 
 }
