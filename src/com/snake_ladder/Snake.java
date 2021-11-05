@@ -36,8 +36,13 @@ public class Snake {
 			break;
 		}
 		
-		System.out.println("The current position of player is "+ player_position);
+		if(player_position > 100) {
+			player_position = 100;
 		}
+		System.out.println("The current position of player is "+ player_position);
+		
+		}
+		System.out.println("You have completed the game");
 	}
 		
 		
