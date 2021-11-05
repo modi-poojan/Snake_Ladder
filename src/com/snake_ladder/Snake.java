@@ -5,6 +5,7 @@ public class Snake {
 	public static void main(String[] args) {
 		
 		int player_position = 0;
+		int dice_roll_time = 0;
 		
 		System.out.println("Lets start the game");
 		
@@ -19,7 +20,7 @@ public class Snake {
 		switch(option) {
 		
 		case 0:
-			System.out.println("No Play, Roll Aagain");
+			System.out.println("No Play, Roll again");
 			break;
 			
 		case 1:
@@ -40,9 +41,10 @@ public class Snake {
 			player_position = 100;
 		}
 		System.out.println("The current position of player is "+ player_position);
+		dice_roll_time++;
 		
 		}
-		System.out.println("You have completed the game");
+		System.out.println("You have completed the game in "+dice_roll_time+" dice rolls");
 	}
 		
 		
